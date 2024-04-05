@@ -9,7 +9,9 @@
 
 body {
   background-color: var(--pnt-color-1-background);
-  height: 2000px;
+  min-height: 100%;
+  overflow-y: scroll;
+  position: relative;
 }
 
 :root {

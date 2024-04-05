@@ -1,14 +1,16 @@
 #main {
-  display: flex;
-
+  display: grid;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 80px;
   justify-content: space-around;
+  background-color: aqua;
 }
 div #main {
   margin-top: 80px;
   justify-content: space-evenly;
+  display: grid;
+  background-color: black;
 }
 
 img {

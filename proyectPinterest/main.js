@@ -1,14 +1,13 @@
 import './style.css'
-import { printHeader } from './components/header/header'
-// import { logoClick } from './components/eventos/eventos'
-// import { getImages } from './components/scr/api'
-// import { inputValue } from './components/header/header'
+import { headerComponents } from './components/header/header'
+import { getImages } from './components/scr/api'
+// import { header } from './components/header/header'
+// import { notComponent } from './components/headerComponents/imgComponent'
 
-// import { logoClick } from './components/scr/api'
-// import { wordKeyImageValue } from './components/header/header'
+getImages()
+// console.log(header)
+headerComponents()
 
-printHeader()
-// logoClick()
-// getImages(inputValue)
-
-// console.log(wordKeyImageValue)
+// Limpiar buscador cuando se cliquee el logo.
+// misma función de logo cuando se cliquee inicio.
+//

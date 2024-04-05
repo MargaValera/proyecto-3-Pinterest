@@ -1,16 +1,12 @@
 import './api.css'
 
-// import { inputValue } from '../header/header'
-
-// const keyWord = inputValue
-// console.log(keyWord)
-
 export const getImages = (keyWord) => {
   const APYkey = 'CRSteEtiSjXVzH_yzRiXWmjkbfToYSOl4HSiuoABUaA'
-  let url = `https://api.unsplash.com/photos/random?client_id=${APYkey}&count=15`
-
+  let url = `https://api.unsplash.com/search/photos?client_id=${APYkey}&count=15`
   if (keyWord !== '') {
     url += `&query=${encodeURIComponent(keyWord)}`
+  } else {
+    url = `https://api.unsplash.com/photos/random?client_id=${APYkey}&count=15`
   }
   console.log(url)
 
@@ -18,7 +14,8 @@ export const getImages = (keyWord) => {
     .then((response) => response.json())
     .then((data) => {
       const gallery = document.getElementById('main')
-      data.forEach((picture) => {
+      gallery.innerHTML = ''
+      data.results.forEach((picture) => {
         const img = document.createElement('img')
         img.className = 'img'
         img.src = picture.urls.regular
@@ -32,10 +29,6 @@ export const getImages = (keyWord) => {
     })
 }
 
-getImages(keyWord)
-
-export { getImages }
+// export { getImages }
 
 // * crear filtro por palabra clave introducida:
-
-console.log(keyWord)

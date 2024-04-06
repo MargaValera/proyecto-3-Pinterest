@@ -1,31 +1,48 @@
-#main {
-  display: grid;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  justify-content: space-around;
-  background-color: aqua;
-}
-div #main {
-  margin-top: 80px;
-  justify-content: space-evenly;
-  display: grid;
-  background-color: black;
+/* #main {
+
+  padding-top: 160px;
+
+  background-color: rgb(227, 224, 224);
+  width: 100%;
+
+  height: auto;
+
 }
 
-img {
-  width: auto;
+.img {
+  width: 230px;
   height: auto;
+  max-width: 100%;
   border-radius: 20px;
   object-fit: contain;
+  padding: 10px;
+
+} */
+
+#img-container {
+  padding-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Columnas flexibles */
+  grid-gap: 10px; /* Espacio entre las imágenes */
 }
 
-img .img {
+.img-item {
+  /* Ajusta el tamaño de las imágenes para adaptarse al contenedor */
   width: 100%;
-  height: 100%;
-
-  border-radius: 20px;
+  height: auto;
+  display: block;
 }
+
+.img-item img {
+  width: 100%;
+  height: auto;
+  display: block; /* Elimina el espacio adicional debajo de las imágenes */
+}
+
+/** hover sobre las imágenes, debe aparecer un botón de guardar, uno de descargar, y ponerse opaca la imagen */
 
 /* 
 img.wide-image {

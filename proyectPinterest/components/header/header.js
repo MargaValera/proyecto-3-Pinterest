@@ -5,19 +5,18 @@ import { messageComponent } from '../headerComponents/msnComponent'
 import { selectOption } from '../headerComponents/selectComponent'
 import { perfilComponent } from '../headerComponents/perfilcomponent'
 import { inputComponent } from '../headerComponents/inputComponent'
-// import { headerNotf } from '../headerComponents/imgComponent'
 
 export const headerComponents = () => {
   const header = document.querySelector('header')
+  // document.body.appendChild(header)
   header.className = 'header'
-  console.log(header)
-  console.log('holamundo')
 
-  header.appendChild(logoComponent())
-  header.appendChild(notComponent())
-  header.appendChild(messageComponent())
-  header.appendChild(selectOption())
-  header.appendChild(perfilComponent())
-  header.appendChild(inputComponent())
+  logoComponent(header)
+  selectOption(header)
+  inputComponent(header)
+  notComponent(header)
+  messageComponent(header)
+  perfilComponent(header)
 }
+
 // headerComponents()

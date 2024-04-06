@@ -1,7 +1,6 @@
-export const perfilComponent = () => {
+export const perfilComponent = (place) => {
   const headerPerfil = document.createElement('img')
   headerPerfil.src = './components/assets/usuario-de-perfil.png'
   headerPerfil.id = 'perfil'
-  console.log(headerPerfil)
+  place.appendChild(headerPerfil)
 }
-perfilComponent()

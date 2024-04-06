@@ -13,11 +13,11 @@ export const getImages = (keyWord) => {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const gallery = document.getElementById('main')
+      const gallery = document.getElementById('img-container')
       gallery.innerHTML = ''
       data.results.forEach((picture) => {
         const img = document.createElement('img')
-        img.className = 'img'
+        img.className = 'img-item'
         img.src = picture.urls.regular
         img.alt = picture.alt_description
 
@@ -28,6 +28,8 @@ export const getImages = (keyWord) => {
       console.error('error fetching images: ', error)
     })
 }
+
+//* llamar api dentro de main creado directamente
 
 // export { getImages }
 

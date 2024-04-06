@@ -1,4 +1,4 @@
-export const selectOption = () => {
+export const selectOption = (place) => {
   const selectOptions = ['Inicio', 'Explorar', 'Crear']
 
   const selectElement = document.createElement('select')
@@ -8,6 +8,5 @@ export const selectOption = () => {
     optionElement.textContent = option
     selectElement.appendChild(optionElement)
   })
-  console.log(selectElement)
+  place.appendChild(selectElement)
 }
-selectOption()

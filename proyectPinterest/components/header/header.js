@@ -8,7 +8,6 @@ import { inputComponent } from '../headerComponents/inputComponent'
 
 export const headerComponents = () => {
   const header = document.querySelector('header')
-  // document.body.appendChild(header)
   header.className = 'header'
 
   logoComponent(header)
@@ -18,5 +17,3 @@ export const headerComponents = () => {
   messageComponent(header)
   perfilComponent(header)
 }
-
-// headerComponents()

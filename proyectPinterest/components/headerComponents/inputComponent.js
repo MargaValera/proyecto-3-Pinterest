@@ -1,4 +1,4 @@
-import { getImages } from '../scr/api'
+import { getImages } from '../callApi/api'
 // import { header } from '../header/header'
 
 export const inputComponent = (place) => {

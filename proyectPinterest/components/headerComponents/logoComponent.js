@@ -1,4 +1,4 @@
-import { getImages } from '../scr/api'
+import { getImages } from '../callApi/api'
 
 export const logoComponent = (place) => {
   const headerLogo = document.createElement('img')

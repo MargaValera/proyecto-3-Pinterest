@@ -7,8 +7,6 @@ header {
   position: fixed;
   min-width: 300px;
   background-color: whitesmoke;
-  padding: 10px;
-  /* margin: 10px; */
   margin-top: 0;
 }
 
@@ -19,15 +17,12 @@ header {
   flex-wrap: wrap;
   justify-items: center;
   align-items: center;
-  /* padding: 10px; */
-  /* margin: 10px; */
 }
 
 header > img {
   width: 40px;
   height: 40px;
   margin: auto;
-  /* justify-items: center; */
   object-fit: contain;
 }
 
@@ -53,4 +48,3 @@ header > select {
 img > #notification {
   object-fit: contain;
 }
-/* Crear querySelector para que se acomoden los logos de cierta manera a partir de 300px */

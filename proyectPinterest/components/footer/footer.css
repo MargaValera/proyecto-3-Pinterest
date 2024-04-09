@@ -1,0 +1,11 @@
+footer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+footer > h4 {
+  font-size: medium;
+  text-align: center;
+}

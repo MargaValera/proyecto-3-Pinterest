@@ -2,7 +2,6 @@ import './api.css'
 
 export const getImages = (keyWord) => {
   const APYkey = 'CRSteEtiSjXVzH_yzRiXWmjkbfToYSOl4HSiuoABUaA'
-  // let url = `https://api.unsplash.com/search/photos?client_id=${APYkey}&count=30`
   let url = `https://api.unsplash.com/search/photos?client_id=${APYkey}&per_page=20`
   if (keyWord !== '') {
     url += `&query=${encodeURIComponent(keyWord)}`
@@ -29,20 +28,3 @@ export const getImages = (keyWord) => {
       console.error('error fetching images: ', error)
     })
 }
-
-// import { createApi } from "unsplash-js"
-
-// const unsplash = createApi({
-//   accessKey: import.meta.env.VITE_ACCESS_KEY,
-// })
-
-// const searchPhotos = async (keyword) => {
-//   const images = await unsplash.search.getPhotos({
-//     query: keyword,
-//     page: 1,
-//     perPage: 30,
-//   })
-//   return images
-// }
-
-// export { getImages }

@@ -48,3 +48,9 @@ header > select {
 img > #notification {
   object-fit: contain;
 }
+
+@media screen and (max-width: 540px) {
+  #input {
+    width: 15%;
+  }
+}
